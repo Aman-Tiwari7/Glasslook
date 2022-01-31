@@ -12,6 +12,7 @@ h1{
   opacity: 0.7;
   font-size: 40px;
 }
+
 h2,p{
   color: #658ec6;
   font-weight: 500;
@@ -141,7 +142,7 @@ height: 80px;
 .progress{
   background: linear-gradient(to right top, #84fbff , #69faff );
   border-radius: 1rem;
-  width: 20rem;
+  width: 100%;
   height: 25%;
   position: relative;
   overflow: hidden;
@@ -154,6 +155,7 @@ height: 80px;
   position: absolute;
 }
 .b2{
+  /* width: 20rem; */
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -168,4 +170,20 @@ height: 80px;
 }
 .yc::after{
   left: 50%;
+}
+
+@media (max-width: 1400px)
+{
+  h1{
+  font-size: 20px ;
+  }
+  h2{
+    font-size: 15px;
+  }
+  h3{
+    font-size:10px;
+  }
+  p{
+    font-size:8px;
+  }
 }
