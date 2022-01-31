@@ -137,12 +137,13 @@ height: 80px;
   background:linear-gradient(to left top, rgba(255,255,255,0.8) ,rgba(255,255,255,0.5));
   border-radius: 1rem;
   box-shadow: 6px 6px 10px rgba(140,140,140,0.2);
+  /* flex-wrap: wrap; */
 }
 
 .progress{
   background: linear-gradient(to right top, #84fbff , #69faff );
   border-radius: 1rem;
-  width: 100%;
+  width: 20rem;
   height: 25%;
   position: relative;
   overflow: hidden;
@@ -174,8 +175,8 @@ height: 80px;
 
 @media (max-width: 1400px)
 {
- .glass{
-    min-height: auto;
+  .glass{
+    min-height: 0;
   }
   h1{
   font-size: 20px ;
@@ -189,4 +190,20 @@ height: 80px;
   p{
     font-size:8px;
   }
+  
+.progress{
+  background: linear-gradient(to right top, #84fbff , #69faff );
+  border-radius: 1rem;
+  width: 10rem;
+  height: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after{
+  content: "";
+  background-color: rgb(230,230,230);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 }
